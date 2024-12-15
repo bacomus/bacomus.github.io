@@ -159,6 +159,47 @@ button{
     max-width: 700px;
 }
 
+.call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    margin: 100px auto;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color: white;
+    max-width: 800px;
+}
+
+.call-text .call-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.call-text .call-subtext {
+    font-size: 16px;
+    margin: 0;
+}
+
+.call-button .sign-up-btn {
+    background-color: #3882f6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.call-button .sign-up-btn:hover {
+    background-color: white;
+    color: #3882f6;
+}
+
+
 footer{
     padding-top: 25px;
     padding-bottom: 25px;
