@@ -1,89 +1,160 @@
+*{
+    font-family: "roboto", sans-serif;
+}
+
 body{
     margin: 0;
-    padding: 0;
-    background-color: #306090;
-    font-family: 'Courier New', Courier, monospace;
-    margin-right: 30px;
 }
 
 .global{
+    background-color: #1F2937;
+    padding-bottom: 180px;
+
+}
+
+.navbar{
     display: flex;
-}
-
-.titre{
-    display: flex;
-    background-color: #ffd00f;
-    color: white;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0px 0px 30px;
-}
-
-.img{
-    margin-right: 300px;
-}
-
-.txt{
-    margin-right: 300px;
-    font-size: 50px;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    font-size: 25px;
-    padding-bottom: 1500px;
     padding-top: 15px;
-    padding-left: 8px;
-    width: 500px;
-    list-style-type: none;
+    margin-bottom: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.linkDir{
+    margin-right: 25px;
+}
+
+#last{
+    margin-right:0;
+}
+
+
+.d1{
+    color:#F9FAF8;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 a{
     text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
-.redirect{
+h1{
+    margin: 0;
+    color:#F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+p{
+    margin: 0;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+figure{
+    margin: 0;
+}
+
+img{
+    width: auto;
+    height: 150px;
+}
+
+button{
+    background-color: #3882f6;
     color: white;
-    padding-left: 8px;
+    border: 0;
+    border-radius: 8px;
+    width: 100px;
+    height: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: larger;
+}
+
+.awesome{
     display: flex;
-    list-style: none;
-    border: 1px solid white;
-    border-radius: 25px;
-    margin-right: 25px;
+    justify-content: center;
 }
 
-.Tomate{
-    background-color: white;
-    border-radius: 25px;
-    margin-bottom: 30px;
+.awesome p{
+    margin-bottom: 15px;
 }
 
-h2{
-    padding-left: 15px;
-    padding-top: 15px;
+.title{
+    padding-right: 30.2%;
 }
 
-.ingre{
+.sub{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 15px;
+    margin-left: 35px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.random p{
+    text-align: center;
+    color: #1F2937;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+}
+
+.subtext{
+    margin-top: 8px;
+    margin-left: 35px;
+    max-width: 155px;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.quote {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 100px 20px;
 }
 
-.prep{
-    padding-left: 15px;
-    padding-bottom: 5px;
+.quote p {
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #1F2937;
+    max-width: 700px;
 }
 
-.Omelette{
-    background-color: white;
-    border-radius: 25px;
-    margin-bottom: 30px;
-}
-
-.Crepes{
-    background-color: white;
-    border-radius: 25px;
+#thor {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 700px;
 }
