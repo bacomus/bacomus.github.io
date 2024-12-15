@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script rel="script" href="script.js"></script>
 </head>
 <body>
     <section class="global">
+        <!-- Navigation Bar -->
         <section class="navbar">
             <div class="d1">Header Logo</div>
             <div class="d2">
                 <ul>
                     <li class="linkDir"><a href="index.html">header link one</a></li>
                     <li class="linkDir"><a href="index.html">header link two</a></li>
-                    <li class="linkDir"><a href="index.html">header link three</a></li>
+                    <li class="linkDir" id="last"><a href="index.html">header link three</a></li>
                 </ul>
             </div>
         </section>
+        
+        <!-- Main Content Section -->
         <section class="awesome">
             <div class="title">
                 <h1>
@@ -28,19 +30,58 @@
                 <p>
                     This website has some subtext that goes under the <br> 
                     main title. It's smaller font and the color is lower <br> 
-                    contrast
+                    contrast.
                 </p>
+                <div class="button-container">
+                    <button>
+                        Sign up
+                    </button>
+                </div>
             </div>
-            <section class="img">
+            <div class="img">
                 <figure>
-                    <img src="placeholder.png" alt="">
+                    <img src="placeholder.png" alt="Placeholder Image">
                 </figure>
-            </section>
+            </div>
         </section>
-        <button>
-            Sign up
-        </button>
-        
     </section>
+
+    <section class="random">
+        <p>Some random information.</p>
+        <section class="box">
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+        </section>
+    </section>
+
+    <section class="para">
+        <p class="subtext">this is some subtext under an illustration or Image</p>
+        <p class="subtext">this is some subtext under an illustration or Image</p>
+        <p class="subtext">this is some subtext under an illustration or Image</p>
+        <p class="subtext">this is some subtext under an illustration or Image</p>
+    </section>
+
+    <section class="quote">
+        <p>
+            This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. 
+            Who knows? All i know is that it looks nice.
+        </p>
+        <p id="thor">-Thor, God of Thunder</p>
+    </section>
+
+    <section class="call">
+        <p></p>
+        <p></p>
+        <div>
+            Sign up
+        </div>
+    </section>
+
+    <footer>
+        Copyright © The Odin Project 2021
+    </footer>
+
 </body>
 </html>
