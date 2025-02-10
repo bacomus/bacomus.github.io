@@ -7,84 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="global">
-        <!-- Navigation Bar -->
-        <section class="navbar">
-            <div class="d1">Header Logo</div>
-            <div class="d2">
-                <ul>
-                    <li class="linkDir"><a href="index.html">header link one</a></li>
-                    <li class="linkDir"><a href="index.html">header link two</a></li>
-                    <li class="linkDir" id="last"><a href="index.html">header link three</a></li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Main Content Section -->
-        <section class="awesome">
-            <div class="title">
-                <h1>
-                    This website is <br>
-                    awesome
-                </h1>
-                <p>
-                    This website has some subtext that goes under the <br> 
-                    main title. It's smaller font and the color is lower <br> 
-                    contrast.
-                </p>
-                <div class="button-container">
-                    <button>
-                        Sign up
-                    </button>
-                </div>
-            </div>
-            <div class="img">
-                <figure>
-                    <img src="placeholder.png" alt="Placeholder Image">
-                </figure>
-            </div>
-        </section>
-    </section>
-
-    <section class="random">
-        <p>Some random information.</p>
-        <section class="box">
-            <div class="sub"></div>
-            <div class="sub"></div>
-            <div class="sub"></div>
-            <div class="sub"></div>
-        </section>
-    </section>
-
-    <section class="para">
-        <p class="subtext">this is some subtext under an illustration or Image</p>
-        <p class="subtext">this is some subtext under an illustration or Image</p>
-        <p class="subtext">this is some subtext under an illustration or Image</p>
-        <p class="subtext">this is some subtext under an illustration or Image</p>
-    </section>
-
-    <section class="quote">
-        <p>
-            This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. 
-            Who knows? All i know is that it looks nice.
-        </p>
-        <p id="thor">-Thor, God of Thunder</p>
-    </section>
-
-    <section class="call">
-        <div class="call-text">
-            <p class="call-title">Call to action! It's time!</p>
-            <p class="call-subtext">Sign up for our product by clicking that button right over there!</p>
+    <section class="header" id="Home">
+        <div class="navbar">
+            <a class="redirect" href="#Home">Home</a>
+            <a class="redirect" href="#Projet">Projet</a>
+            <a class="redirect" href="#Competence">Competence</a>
         </div>
-        <div class="call-button">
-            <button class="sign-up-btn">Sign up</button>
+        <section id="About">
+            <h1 class="text">CHOURAIH Baptiste</h1>
+            <p class="sub-text">Etudiant en BUT Informatique</p>
+            <a id="Download" href="/CV baptiste Chouraih.pdf" download="CV Baptiste Chouraih">Télécharger CV.</a>
+        </section>
+        <div class="link">
+            <a href="https://github.com/bacomus/" target="_blank"><img class="social" src="img/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/baptiste-chouraih-a97924341/" target="_blank"><img class="social" src="img/linkedin.png" alt=""></a>
         </div>
     </section>
+
     
+    <section id="Competence">
+        <h2 class="Competence">Competence</h2>
+        <div class="img">
+            <div class="logo">
+                <h3>Python</h3>
+                <img id="python" src="img/python.png" alt="">
+            </div>
+            <div class="logo">
+                <h3>HTML</h3>
+                <img id="html" src="img/html.png" alt="">
+            </div>
+            <div class="logo">
+                <h3>CSS</h3>
+                <img id="css" src="img/css.png" alt="">
+            </div>
+            <div class="logo">
+                <h3>SQL</h3>
+                <img id="postgres" src="img/postgres.png" alt="">
+            </div>
+        </div>
 
-    <footer>
-        Copyright © The Odin Project 2021
-    </footer>
+    </section>
+
+    <section id="Projet">
+
+    </section>
 
 </body>
 </html>
