@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="playRound('Pierre')">Pierre</button>
+    <button onclick="playRound('Feuille')">Feuille</button>
+    <button onclick="playRound('Ciseaux')">Ciseaux</button>
+
+    <p id="joueur">CHOIX JOUEUR :</p>
+    <p id="ordi">CHOIX ORDI :</p>
+    <p id="resultat">RÉSULTAT :</p>
+    <p id="score">Manche : 0/5</p>
+
+    <button id="rejouer" onclick="resetGame()" style="display: none;">Rejouer</button>
+
+    <script src="main.js"></script>
+</body>
+</html>

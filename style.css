@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #010f68;
+    color: lightgray;
     font-family: Poppins;
     padding: 0;
     margin: 0;
@@ -24,6 +29,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
+    scroll-behavior: smooth;
 }
 
 
@@ -112,6 +118,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 120px;
+    padding-bottom: 75px;
     justify-content: space-around;
     color: black;
     background-color: #010c50;
@@ -146,108 +153,198 @@ body {
 }
 
 #python{
-    width: 130px;
-    height: auto;
+    height: 130px;
+    width: auto;
 }
 
 #css{
-    width: 130px;
-    height: auto;
+    height: 130px;
+    width: auto;
 }
 
 #html{
-    width: 130px;
-    height: auto;
+    height: 130px;
+    width: auto;
 }
 
 #postgres{
-    width: 130px;
-    height: auto;
+    height: 130px;
+    width: auto;
 }
+
+.Projet-header{
+    text-align: center;
+}
+
+
+.boxes {
+    display: flex;
+    flex-direction: row; /* Keeps items in a row */
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between; /* Ensures spacing */
+    padding: 25px;
+    margin: 35px;
+    border-radius: 12px;
+    background-color: #010c50;
+}
+
+.explain {
+    flex: 1; /* Takes available space */
+    text-align: justify; /* Ensures text is left-aligned */
+    margin-right: 20px; /* Adds space between text and image */
+    color: lightgray;
+    align-self: flex-start; /* Moves text to the top */
+}
+
+.MM {
+    width: auto;
+    max-width: 25%; /* Ensures image is not too large */
+    border-radius: 12px;
+}
+
+
+
 
 @keyframes cursor{
     50% {border-color: transparent;}
 }
 
-@keyframes typing{
-    from {width : 0};
-}
+/* Base Styles (Ton code original reste intact ici) */
 
+/* Responsive Styles (Ajouts seulement) */
+
+/* For screen sizes between 1024px and 768px (Tablets) */
 @media screen and (max-width: 1024px) {
     .text {
-        font-size: 3em;
+        font-size: 3em; /* Adapt text size */
     }
+
     .sub-text {
-        font-size: 1em;
+        font-size: 1.2em;
     }
+
     .navbar {
         justify-content: center;
         padding: 10px;
     }
+
     .redirect {
-        padding: 10px;
-        font-size: 0.9rem;
+        padding: 8px;
+        font-size: 1em;
     }
+
     .img {
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
+
     .logo {
-        width: 150px;
-        padding: 20px;
+        width: 150px; /* Adjust logo size */
     }
-    
+
     #python, #css, #html, #postgres {
-        width: 130px;
+        height: 80px;
+        width: auto;
+    }
+
+    .boxes {
+        flex-direction: column;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .explain {
+        text-align: center;
+    }
+
+    .MM {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
     }
 }
 
+/* For smaller screens (phones, 768px and below) */
 @media screen and (max-width: 768px) {
     .text {
-        margin-top: 250px;
+        margin-top: 100px;
         font-size: 2.5em;
-        letter-spacing: 2px;
     }
+
     .sub-text {
         font-size: 1em;
     }
+
     .navbar {
         flex-direction: column;
-        align-items: center;
         padding: 10px;
     }
+
     .redirect {
         padding: 8px;
-        font-size: 0.8rem;
+        font-size: 1em;
     }
+
     .logo {
-        width: 120px;
-        padding: 15px;
+        width: 120px; /* Adjust logo size */
     }
-    #python, #css, #html, #postgres {
-        width: 80px;
+
+    .logo img {
+        max-height: 50px;
+    }
+
+    .boxes {
+        padding: 15px;
+        margin: 15px;
+        flex-direction: column;
+    }
+
+    .explain {
+        margin-bottom: 20px;
+    }
+
+    .MM {
+        width: 100%;
+        height: auto;
     }
 }
 
+/* For very small screens (mobile phones in portrait mode) */
 @media screen and (max-width: 480px) {
     .text {
         font-size: 2em;
-        letter-spacing: 1px;
     }
+
     .sub-text {
         font-size: 0.9em;
     }
+
     .navbar {
-        padding: 8px;
+        padding: 5px;
     }
+
     .redirect {
         padding: 5px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
+
     .logo {
         width: 100px;
-        padding: 10px;
     }
-    #python, #css, #html, #postgres {
-        width: 70px;
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    .img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
     }
 }
