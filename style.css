@@ -313,7 +313,7 @@ body {
 /* For very small screens (mobile phones in portrait mode) */
 @media screen and (max-width: 480px) {
     .text {
-        font-size: 2em;
+        font-size: 15px;
     }
 
     .sub-text {
